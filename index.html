@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ТочноНеСкам.рф</title>
+    <meta name="description" content="ТочноНеСкам.РФ — проверь себя и свои знания цифровой безопасности">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .rule-card { 
+            margin-bottom: 1.5rem; 
+            padding: 1.25rem; 
+            border-radius: 12px; 
+            transition: transform 0.2s;
+            min-height: 220px;
+        }
+        .rule-card:hover { transform: translateY(-3px); }
+        .icon-large { 
+            font-size: 2.5rem; 
+            color: #007bff; 
+            margin-bottom: 0.75rem;
+        }
+        .footer { 
+            background-color: #f8f9fa; 
+            padding: 1rem;
+        }
+        
+        /* Мобильные улучшения */
+        @media (max-width: 768px) {
+            .display-3 {
+                font-size: 1.2rem;
+            }
+            
+            .lead {
+                font-size: 0.7rem;
+            }
+            
+            .icon-large {
+                font-size: 2rem;
+            }
+            
+            .rule-card {
+                padding: 1rem;
+                margin-bottom: 1rem;
+            }
+            
+            .rule-card h3 {
+                font-size: 1.15rem;
+            }
+            
+            .footer p {
+                font-size: 0.85rem;
+            }
+        }
+        html, body {
+            height: 100%;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body class="d-flex flex-column">
+    <header class="bg-primary text-white text-center py-4 py-md-5">
+        <div class="container">
+            <h1 class="display-3 fw-bold mb-3">🛡️ Основы кибербезопасности</h1>
+            <p class="lead mb-4">Защити себя в цифровом мире — просто и эффективно</p>
+        </div>
+    </header>
+
+    <section class="container my-4 my-md-5">
+        <div class="row g-3 g-md-4">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="rule-card bg-light h-100">
+                    <i class="fas fa-lock icon-large"></i>
+                    <h3 class="h4 mb-3">Сильные пароли</h3>
+                    <p class="mb-0">Придумывай пароли из 12+ символов: буквы, цифры, спецсимволы. Никогда не используй "123456"!</p>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="rule-card bg-light h-100">
+                    <i class="fas fa-mobile-alt icon-large"></i>
+                    <h3 class="h4 mb-3">Двухфакторка</h3>
+                    <p class="mb-0">Включай подтверждение по SMS или приложению для важных аккаунтов (почта, банк).</p>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="rule-card bg-light h-100">
+                    <i class="fas fa-sync-alt icon-large"></i>
+                    <h3 class="h4 mb-3">Обновляй ПО</h3>
+                    <p class="mb-0">Своевременно обновляй ОС, браузеры и приложения — это закрывает дыры в безопасности.</p>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="rule-card bg-light h-100">
+                    <i class="fas fa-exclamation-triangle icon-large"></i>
+                    <h3 class="h4 mb-3">Осторожно с ссылками</h3>
+                    <p class="mb-0">Не кликай на подозрительные ссылки в письмах и сообщениях — это может быть фишинг.</p>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="rule-card bg-light h-100">
+                    <i class="fas fa-cloud-upload-alt icon-large"></i>
+                    <h3 class="h4 mb-3">Резервные копии</h3>
+                    <p class="mb-0">Храни важные данные в нескольких местах: облако + внешний диск.</p>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="rule-card bg-light h-100">
+                    <i class="fas fa-shield-alt icon-large"></i>
+                    <h3 class="h4 mb-3">Антивирус</h3>
+                    <p class="mb-0">Установи надёжный антивирус и регулярно проверяй устройства.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer mt-auto">
+        <div class="container text-center">
+            <p class="mb-0 text-muted">2025 © Покумин Никита Дмитриевич</p>
+            <a href="https://t.me/nokid3v">Связь со мной</a>
+        </div>
+    </footer>
+</body>
+</html>
