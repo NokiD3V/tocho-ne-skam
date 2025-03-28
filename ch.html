@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Чехословакия в период социализма</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <style>
+      .hero-section {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+          url("https://avatars.dzeninfra.ru/get-zen_doc/5211354/pub_61f39159d937f22e2f8cb4e8_61f69086092f0207a2d468a8/scale_1200");
+        background-size: cover;
+        background-position: center;
+        color: white;
+        padding: 120px 0;
+        margin-bottom: 50px;
+      }
+
+      .timeline {
+        position: relative;
+        padding-left: 50px;
+      }
+
+      .timeline::before {
+        content: "";
+        position: absolute;
+        left: 20px;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background: #dc3545;
+      }
+
+      .timeline-item {
+        position: relative;
+        margin-bottom: 30px;
+      }
+
+      .timeline-item::before {
+        content: "";
+        position: absolute;
+        left: -40px;
+        top: 5px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #dc3545;
+        border: 3px solid white;
+      }
+
+      .card-hover:hover {
+        transform: translateY(-10px);
+        transition: transform 0.3s ease;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .person-card {
+        transition: all 0.3s ease;
+      }
+
+      .person-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .architecture-img {
+        height: 250px;
+        object-fit: cover;
+        filter: grayscale(30%);
+        transition: filter 0.3s ease;
+      }
+
+      .architecture-img:hover {
+        filter: grayscale(0%);
+      }
+
+      footer {
+        background-color: #343a40;
+        color: white;
+        padding: 30px 0;
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">История. ИСВ-23-1</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#history">История</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#culture">Культура</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#architecture">Архитектура</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#persons">Персоны</a>
+            </li>
+            <li class="nav-item">
+                <a href="#democratization" class="nav-link">Демократизация</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#facts">Факты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Герой секция -->
+    <header class="hero-section text-center animate__animated animate__fadeIn">
+      <div class="container">
+        <h1 class="display-3 fw-bold mb-4">Чехословакия в период социализма</h1>
+        <p class="lead mb-5">
+          “ Чехословакия – страна, которой больше нет на карте, но которая
+          навсегда осталась в сердцах. Не потому, что она была идеальной, а
+          потому, что была нашей. “
+        </p>
+        <a href="#history" class="btn btn-danger btn-lg px-4 me-2"
+          >Узнать больше</a
+        >
+        <a href="#facts" class="btn btn-outline-light btn-lg px-4"
+          >Интересные факты</a
+        >
+      </div>
+    </header>
+
+    <!-- Основное содержимое -->
+    <div class="container">
+      <!-- Блок 1: История -->
+      <section
+        id="history"
+        class="mb-5 py-5 animate__animated animate__fadeInUp"
+      >
+        <h2 class="text-center mb-5 display-4 fw-bold">
+          Исторический контекст
+        </h2>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="timeline">
+              <div class="timeline-item">
+                <h3>1948 год - Победа коммунистов</h3>
+                <p>
+                  Февральские события приводят к установлению коммунистического
+                  режима в Чехословакии.
+                </p>
+              </div>
+              <div class="timeline-item">
+                <h3>1960 год - Новая конституция</h3>
+                <p>
+                  Принятие конституции, провозгласившей победу социализма и
+                  изменение названия страны на ЧССР.
+                </p>
+              </div>
+              <div class="timeline-item">
+                <h3>1968 год - Пражская весна</h3>
+                <p>
+                  Попытка реформ Александра Дубчека, подавленная вводом войск
+                  Варшавского договора.
+                </p>
+              </div>
+              <div class="timeline-item">
+                <h3>1977 год - Хартия 77</h3>
+                <p>
+                  Появление диссидентского движения, выступавшего за соблюдение
+                  прав человека.
+                </p>
+              </div>
+              <div class="timeline-item">
+                <h3>1989 год - Бархатная революция</h3>
+                <p>
+                  Мирное свержение коммунистического режима и переход к
+                  демократии.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card h-100 card-hover shadow">
+              <img
+                src="https://avatars.dzeninfra.ru/get-zen_doc/3468648/pub_62b896595970140fe3cdb0e7_62b89bf8557ea1026b8ef868/scale_1200"
+                class="card-img-top"
+                alt="Чехословакия"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Социалистическая Чехословакия</h3>
+                <p class="card-text">
+                  Период с 1948 по 1989 год был временем значительных
+                  политических, экономических и культурных изменений в
+                  Чехословакии. Страна стала частью восточного блока, пережила
+                  попытку либерализации в 1968 году и в конечном итоге мирный
+                  переход к демократии в 1989 году.
+                </p>
+                <p>
+                  Несмотря на политические ограничения, этот период отмечен
+                  расцветом чехословацкой культуры, кинематографа, литературы и
+                  архитектуры.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Блок 2: Культура -->
+      <section
+        id="culture"
+        class="mb-5 py-5 bg-light rounded-3 animate__animated animate__fadeIn"
+      >
+        <h2 class="text-center mb-5 display-4 fw-bold">Культурное наследие</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 card-hover shadow">
+              <div class="card-body">
+                <h3 class="card-title">Литература</h3>
+                <p>
+                  Чехословацкая литература социалистического периода включала
+                  как официально признанных авторов, так и диссидентов:
+                </p>
+                <ul>
+                  <li>Богумил Грабал</li>
+                  <li>Милан Кундера</li>
+                  <li>Вацлав Гавел</li>
+                  <li>Ян Отченашек</li>
+                  <li>Ладислав Мнячко</li>
+                </ul>
+                <p>
+                  Многие произведения издавались в самиздате или за границей.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 card-hover shadow">
+              <div class="card-body">
+                <h3 class="card-title">Кинематограф</h3>
+                <p>Чехословацкое кино получило мировое признание:</p>
+                <ul>
+                  <li>Милош Форман ("Черный Петр", "Любовь блондинки")</li>
+                  <li>Иржи Менцель ("Поезда под пристальным наблюдением")</li>
+                  <li>Вера Хитилова ("Маргаритки")</li>
+                  <li>Ян Шванкмайер (авангардное кино)</li>
+                </ul>
+                <p>
+                  Новая волна чехословацкого кино 1960-х оказала влияние на
+                  мировой кинематограф.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 card-hover shadow">
+              <div class="card-body">
+                <h3 class="card-title">Музыка</h3>
+                <p>Музыкальная культура Чехословакии:</p>
+                <ul>
+                  <li>Карел Готт - "золотой голос Праги"</li>
+                  <li>Вальдемар Матушка - популярный певец</li>
+                  <li>Пражский симфонический оркестр</li>
+                  <li>Фестиваль "Пражская весна"</li>
+                  <li>Рок-группы: Olympic, Katapult</li>
+                </ul>
+                <p>
+                  Сочетание классических традиций и современных направлений.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Блок 3: Архитектура -->
+      <section
+        id="architecture"
+        class="mb-5 py-5 animate__animated animate__fadeInUp"
+      >
+        <h2 class="text-center mb-5 display-4 fw-bold">
+          Архитектура социализма
+        </h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card shadow">
+              <img
+                src="https://t4.ftcdn.net/jpg/05/46/20/69/360_F_546206996_t7mUWVFzQp6PPJhHYgwHQNQH75k7ZGWd.jpg"
+                class="card-img-top architecture-img"
+                alt="Панельные дома"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Панельные дома</h3>
+                <p class="card-text">
+                  Массовое жилищное строительство в стиле брутализм. Целые
+                  районы (например, Пражский Южний город) застраивались типовыми
+                  панельными домами.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card shadow">
+              <img
+                src="http://rasfokus.ru/images/photos/medium/b0eca33e0cb759c24220a727a9f88aae.jpg"
+                class="card-img-top architecture-img"
+                alt="Дом у Черной Матери Божьей"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Кубизм и рондокубизм</h3>
+                <p class="card-text">
+                  Уникальные чешские архитектурные стили. Дом у Черной Матери
+                  Божьей Йозефа Гочара - яркий пример.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card shadow">
+              <img
+                src="https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_661a728cfa25f037223fbc68_661a81906c9d113c981d1cca/scale_1200"
+                class="card-img-top architecture-img"
+                alt="Телебашня"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Телебашня в Праге</h3>
+                <p class="card-text">
+                  Построена в 1985-1992 гг. Высота 216 метров. Яркий пример
+                  позднего модернизма с элементами хай-тека.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card shadow">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Praha%2C_Federální_shormáždění.JPG"
+                class="card-img-top architecture-img"
+                alt="Здание Федерального собрания"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Здание Федерального собрания</h3>
+                <p class="card-text">
+                  Построено в 1973 году в стиле брутализм. Сейчас используется
+                  Национальным музеем.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Блок 4: Персоны -->
+      <section
+        id="persons"
+        class="mb-5 py-5 bg-light rounded-3 animate__animated animate__fadeIn"
+      >
+        <h2 class="text-center mb-5 display-4 fw-bold">Выдающиеся личности</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card person-card h-100 shadow">
+              <img
+                style="max-height: 550px"
+                src="https://yastatic.net/naydex/yandex-search/mf6IdM007/0d8a77Ph3B-/txAQojNHh3PpSoVlTwd4Kw1kO7er6_jT61hKs6Y2_4khXT5_UhsLoZ8TbfQ5A-goZ1HcjsmJmNLJMeNkSFK9dOPTHyl_3Ey9JlWJbMbN_y1dZru0q6682Tf"
+                class="card-img-top"
+                alt="Вацлав Гавел"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Вацлав Гавел</h3>
+                <p class="card-text">
+                  Драматург, диссидент, последний президент ЧССР и первый
+                  президент Чехии. Автор "Письма Густаву Гусаку".
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card person-card h-100 shadow">
+              <img
+                src="https://i.pinimg.com/736x/9f/34/aa/9f34aadc125b973e9c9687ab6d63f3e5.jpg"
+                class="card-img-top"
+                style="max-height: 550px"
+                alt="Милан Кундера"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Милан Кундера</h3>
+                <p class="card-text">
+                  Писатель, автор "Невыносимой легкости бытия". В 1975 году
+                  эмигрировал во Францию.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card person-card h-100 shadow">
+              <img
+                src="https://sun9-62.userapi.com/s/v1/ig2/2c73YKFOJjVEmKW5Wytjt7RPPWpuX1gTlokCqyWP1VQ6izZLdoqOeBLieepgjoaneM-6XLOajoi49-5ipTazi9pv.jpg?quality=96&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720,1024x1024&from=bu&u=BydfnTveg-SXwxRaD7JOAbZdES40HrlJemNSJosqCu0&cs=604x604"
+                class="card-img-top"
+                alt="Карел Готт"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Карел Готт</h3>
+                <p class="card-text">
+                  Певец, "король чешской поп-музыки". Символ чехословацкой
+                  эстрады, популярный и в СССР.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Добавить после блока с интересными фактами или перед футером -->
+
+      <!-- Блок 6: Факторы демократизации -->
+      <section
+        id="democratization"
+        class="mb-5 py-5 bg-opacity-10 animate__animated animate__fadeIn"
+      >
+        <div class="container">
+          <h2 class="text-center mb-5 display-4 fw-bold">
+            Факторы демократизации в Чехословакии
+          </h2>
+          <p class="lead text-center mb-5">
+            Согласно теории Сэмюэля Хантингтона (1970-1980-е гг.)
+          </p>
+
+          <div class="row g-4">
+            <!-- Фактор 1 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <div class="d-flex align-items-center mb-3">
+                    <div
+                      class="bg-danger text-white rounded-circle d-flex align-items-center justify-content-center"
+                      style="width: 40px; height: 40px"
+                    >
+                      <span class="fw-bold">1</span>
+                    </div>
+                    <h3 class="ms-3 mb-0 h5">Экономическое развитие</h3>
+                  </div>
+                  <p class="card-text">
+                    Чехословакия была одной из наиболее индустриально развитых
+                    стран Восточного блока. Образовался урбанизированный средний
+                    класс, недовольный экономическим застоем.
+                  </p>
+                  <p>
+                    Это создало социальную базу для требований реформ, особенно
+                    среди интеллигенции и рабочих (движение «Хартия 77»).
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Фактор 2 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <div class="d-flex align-items-center mb-3">
+                    <div
+                      class="bg-danger text-white rounded-circle d-flex align-items-center justify-content-center"
+                      style="width: 40px; height: 40px"
+                    >
+                      <span class="fw-bold">2</span>
+                    </div>
+                    <h3 class="ms-3 mb-0 h5">Роль церкви</h3>
+                  </div>
+                  <p class="card-text">
+                    В Чехословакии усилились требования свободы вероисповедания,
+                    что способствовало объединению оппозиционных сил.
+                  </p>
+                  <p>
+                    Католическая церковь стала важным институтом гражданского
+                    общества, альтернативным государственной идеологии.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Фактор 3 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <div class="d-flex align-items-center mb-3">
+                    <div
+                      class="bg-danger text-white rounded-circle d-flex align-items-center justify-content-center"
+                      style="width: 40px; height: 40px"
+                    >
+                      <span class="fw-bold">3</span>
+                    </div>
+                    <h3 class="ms-3 mb-0 h5">Международный контекст</h3>
+                  </div>
+                  <p class="card-text">
+                    Перестройка в СССР (с 1985 г.) ослабила давление на страны
+                    Восточной Европы.
+                  </p>
+                  <p>
+                    Советское руководство отказалось от вмешательства во
+                    внутренние дела союзников, что позволило Чехословакии
+                    провести мирную революцию.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Фактор 4 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <div class="d-flex align-items-center mb-3">
+                    <div
+                      class="bg-danger text-white rounded-circle d-flex align-items-center justify-content-center"
+                      style="width: 40px; height: 40px"
+                    >
+                      <span class="fw-bold">4</span>
+                    </div>
+                    <h3 class="ms-3 mb-0 h5">Эффект "снежного кома"</h3>
+                  </div>
+                  <p class="card-text">
+                    Падение режимов в Польше (1989), Венгрии и ГДР вдохновило
+                    чехословацких граждан на массовые акции протеста.
+                  </p>
+                  <p>
+                    «Бархатная революция» (ноябрь 1989) стала результатом цепной
+                    реакции демократизации в регионе.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Итоговый вывод -->
+          <div
+            class="mt-5 p-4 bg-white rounded-3 shadow-sm animate__animated animate__fadeInUp"
+          >
+            <div class="d-flex">
+              <div class="flex-shrink-0 text-danger fw-bold fs-1 me-3">→</div>
+              <div>
+                <h3 class="h4">Итог:</h3>
+                <p class="mb-0">
+                  В Чехословакии сочетание внутренних социально-экономических
+                  предпосылок, международного контекста и регионального
+                  «демократического импульса» привело к падению
+                  коммунистического режима и установлению демократического строя
+                  в 1989 году.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Блок 5: Факты -->
+      <section id="facts" class="mb-5 py-5 animate__animated animate__fadeInUp">
+        <h2 class="text-center mb-5 display-4 fw-bold">Интересные факты</h2>
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="accordion" id="factsAccordion">
+              <div class="accordion-item mb-3 shadow-sm">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#fact1"
+                  >
+                    Чехословацкий социалистический реализм
+                  </button>
+                </h2>
+                <div
+                  id="fact1"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#factsAccordion"
+                >
+                  <div class="accordion-body">
+                    В начале 1950-х в Чехословакии, как и в других соцстранах,
+                    господствовал соцреализм. Однако чехословацкий вариант был
+                    менее догматичным и более ориентированным на национальные
+                    традиции.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item mb-3 shadow-sm">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#fact2"
+                  >
+                    Танцующий дом
+                  </button>
+                </h2>
+                <div
+                  id="fact2"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#factsAccordion"
+                >
+                  <div class="accordion-body">
+                    Хотя знаменитый "Танцующий дом" в Праге построен уже после
+                    социализма (1996), его проект разрабатывался еще в 1980-е
+                    годы чешско-хорватским архитектором Владо Милуничем.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item mb-3 shadow-sm">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#fact3"
+                  >
+                    Чехословацкий "Битлз"
+                  </button>
+                </h2>
+                <div
+                  id="fact3"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#factsAccordion"
+                >
+                  <div class="accordion-body">
+                    Группа "Olympic" считалась чехословацким аналогом The
+                    Beatles. Несмотря на идеологические ограничения, западная
+                    музыка проникала в ЧССР и влияла на местных исполнителей.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item mb-3 shadow-sm">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#fact4"
+                  >
+                    Пражское метро
+                  </button>
+                </h2>
+                <div
+                  id="fact4"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#factsAccordion"
+                >
+                  <div class="accordion-body">
+                    Первая линия пражского метро открылась в 1974 году. Станции
+                    отличаются монументальностью и богатым оформлением,
+                    характерным для социалистической архитектуры.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item mb-3 shadow-sm">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#fact5"
+                  >
+                    Чехословацкий экспорт культуры
+                  </button>
+                </h2>
+                <div
+                  id="fact5"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#factsAccordion"
+                >
+                  <div class="accordion-body">
+                    Несмотря на железный занавес, чехословацкие фильмы, книги и
+                    музыка активно экспортировались в другие соцстраны, включая
+                    СССР. Многие чехословацкие фильмы стали культовыми в
+                    Советском Союзе.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Футер -->
+    <footer class="animate__animated animate__fadeIn">
+      <div class="container text-center">
+        <p>
+          &copy; 2025 гр. ИСВ-23-1. Покумин Никита, Смолин Максим, Южакова
+          Алёна, Харченко Олеся, Ларионова Анна
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Анимация при скролле
+      document.addEventListener("DOMContentLoaded", function () {
+        const animateElements = document.querySelectorAll(".animate__animated");
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                const animation =
+                  entry.target.getAttribute("data-animation") ||
+                  entry.target.classList.contains("animate__fadeInUp")
+                    ? "animate__fadeInUp"
+                    : "animate__fadeIn";
+                entry.target.classList.add(animation);
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          {
+            threshold: 0.1,
+          }
+        );
+
+        animateElements.forEach((el) => {
+          observer.observe(el);
+        });
+
+        // Плавный скролл для навигации
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute("href")).scrollIntoView({
+              behavior: "smooth",
+            });
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
